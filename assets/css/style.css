@@ -13,9 +13,9 @@ footer {
 }
 
 .row {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .col {
@@ -43,6 +43,13 @@ footer {
   background-color: white;
 }
 
+pre.card-snippet {
+  font-family: monospace;
+  background: linear-gradient(darkgray, pink);
+  border-radius: .5rem;
+  text-align: left;
+  padding-top: 1rem;
+}
 
 
 footer p {
