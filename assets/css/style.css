@@ -16,17 +16,17 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .col {
   width: 33%;
-  margin: .5rem;
 }
 
 .card {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  position: relative;
   border: dashed 2px hotpink;
   padding: .5rem;
   padding-top: 1rem;
@@ -36,10 +36,8 @@ footer {
 .card-title {
   border: solid 2px hotpink;
   border-radius: 5px;
-  position: absolute;
-  top: -10px;
-  left: 5%;
-  width: 90%;
+  position: relative;
+  top: -25px;
   background-color: white;
 }
 
@@ -54,4 +52,16 @@ pre.card-snippet {
 
 footer p {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .col {
+    width: 100%;
+  }
 }
