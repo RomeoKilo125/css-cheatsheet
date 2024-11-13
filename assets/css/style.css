@@ -15,12 +15,35 @@ footer {
 .row {
   width: 100%;
   display: flex;
-  border: solid 1px black;
+  justify-content: space-evenly;
 }
 
 .col {
   width: 33%;
+  margin: .5rem;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: dashed 2px hotpink;
+  padding: .5rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  border: solid 2px hotpink;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+}
+
+
 
 footer p {
   width: 100%;
